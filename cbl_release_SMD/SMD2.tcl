@@ -1,3 +1,4 @@
+# This script enabled controlled permeation of Cbl through BtuB using constant-velocity SMD at the restrained position of extended luminal domain
 source prepare_btub.tcl
 source prepare_pull.tcl 
 source prepare_cbl.tcl
