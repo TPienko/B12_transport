@@ -1,4 +1,3 @@
-/*Tests SWIGs handling of pass-by-value for complex datatypes */
 %module vectors
 %{
 #include <fstream>
