@@ -1,1 +1,1 @@
-# This repository contains the data and scripts coming from the study of T. Pieńko and J. Trylska entitled "Extracellular loops of BtuB facilitate transport of vitamin B12 through the outer membrane of E. coli" 
+# This repository contains the data and scripts coming from the study of T. Pieńko and J. Trylska entitled "Extracellular loops of BtuB facilitate transport of vitamin B12 through the outer membrane of E. coli". In each directory, a separate README file, describing its content in detail, is placed.
