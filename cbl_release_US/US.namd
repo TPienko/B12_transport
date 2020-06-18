@@ -77,7 +77,7 @@ outputEnergies      2500
 outputPressure      2500
 
 tclForces on
-tclForcesScript umbrella_cbl_197.tcl
+tclForcesScript US.tcl
 
 colvars on
 colvarsConfig cbl_frame197_umbrella10.0.in
