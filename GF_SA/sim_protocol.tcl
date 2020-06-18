@@ -36,8 +36,7 @@ proc simAnneal {} {
 }
 
 proc normalRun {} {
-   global cbx cby cbz firstStep simFlag simSteps numA dev atoms1 atoms2 atoms3 cblGroup pullGroup btubGroup timeStep kc rcx rcy rcz pcx pcy pcz v kr kp ke addforceFreq forceFreq2
-
+   global cbx cby cbz simFlag simSteps numA dev atoms1 atoms2 atoms3 cblGroup pullGroup btubGroup timeStep kc rcx rcy rcz pcx pcy pcz v kr kp ke addforceFreq forceFreq2
    set heatSteps {2000} ; set maintainSteps {250000} ; set coolSteps {30000}
    set relaxSteps {50000} ; set steps {100}
    set simSteps [expr {$steps*$heatSteps+$steps*$coolSteps+$maintainSteps+$relaxSteps}]
