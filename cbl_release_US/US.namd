@@ -80,6 +80,6 @@ tclForces on
 tclForcesScript US.tcl
 
 colvars on
-colvarsConfig cbl_frame197_umbrella10.0.in
+colvarsConfig cbl_US_10.0.in
 
 run 18750000
