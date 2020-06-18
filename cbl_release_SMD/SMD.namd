@@ -14,8 +14,6 @@ set outputname     SMD
 
 set pressure 1.01325
 
-set langevinPistonTarget $pressure
-
 #############################################################
 ## SIMULATION PARAMETERS                                   ##
 #############################################################
