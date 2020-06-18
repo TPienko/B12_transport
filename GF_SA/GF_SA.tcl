@@ -33,7 +33,7 @@ proc restrain_end {pcy ke acy} {
 ##################################### CALCULATE FORCES #############################################
 proc calcforces {} {
    if {[array exists coords]} {array unset coords}
-   global simFlag simSteps numA dev atoms1 atoms2 atoms3 cblGroup pullGroup btubGroup timeStep kc kr kp ke addforceFreq forceFreq2
+   global cbx cby cbz firstStep simFlag simSteps numA dev atoms1 atoms2 atoms3 cblGroup pullGroup btubGroup timeStep kc rcx rcy rcz pcx pcy pcz v kr kp ke addforceFreq forceFreq2
    loadcoords coords
    restrain_btub $rcx $rcy $rcz $kr [lindex $coords($btubGroup) 0] [lindex $coords($btubGroup) 1] [lindex $coords($btubGroup) 2]
    restrain_end $pcy $ke [lindex $coords($pullGroup) 1]
