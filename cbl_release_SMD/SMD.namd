@@ -79,6 +79,6 @@ outputEnergies      2500
 outputPressure      2500
 
 tclForces           on
-tclForcesScript     SMD.tcl
+tclForcesScript     SMD1.tcl
 
 run 150000000
