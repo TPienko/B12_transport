@@ -1,3 +1,4 @@
+# This script enabled simultaneous unfolding of the luminal domain and release of Cbl from BtuB using constant-velocity and constant-force SMD
 source prepare_btub.tcl
 source prepare_pull.tcl
 source prepare_cbl.tcl
