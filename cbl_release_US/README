@@ -1,4 +1,5 @@
 The *.zip file contains the PMFs calculated from umbrella sampling (US) simulations of Cbl permeation through BtuB using cumulative data and its RMSD. 
 The *.namd file provides configuration for exemplary US simulation. 
-The *.tcl script restrained the position of the extended luminal domain during US simulation.   
+The US.tcl script restrained the position of the extended luminal domain during US simulation.   
+The RMSD_PMF.tcl was used to calculate the RMSD of PMF. 
 The *.in file contains the info about collective variable and harmonic potential used in US simulation. 
