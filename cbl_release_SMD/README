@@ -4,4 +4,4 @@
 
 # The *.namd file provides a configuration for running SMD in NAMD
 
-# The *.tcl scripts are used to perform SMD simulation using TclForces module in NAMD
+# The *.tcl scripts are used to perform SMD simulations using TclForces module in NAMD
