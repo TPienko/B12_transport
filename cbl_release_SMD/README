@@ -1,7 +1,8 @@
 The data.zip file comprises the time-series of:
-  A) the extension of the luminal domain vs the relative position of Cbl in z while the constant-velocity / constant-force SMD simulations of simultaneous unfolding of the luminal domain and release of Cbl (Force*.dat- the file title indicates the constant force (in kcal/mol) imposed on Cbl)
-  B)
-
+  A) the extension of the luminal domain vs the relative position of Cbl in z in the constant-velocity / constant-force SMD simulations of simultaneous unfolding of the luminal domain and release of Cbl (Force*.dat- the file title indicates the constant force (in kcal/mol) imposed on Cbl)
+  B) the relative position of Cbl in z vs the tilt of Cbl to the BtuB axis during the permeation simulated with SMD (Cbl_tilt.dat)
+  C) the relative position of Cbl in z vs the SMD force necessary to pull the Cbl through BtuB in SMD (Cbl_SMD_force.dat)
+  D) the relative position of LD in z vs the extension of LD during the SMD unfolding simulation (unfolding_SMD_force.dat)
 The *.prmtop file contains parameters and topology, the *.pdb file contains coordinates of the system, the *.xsc file contains the PBC information
 The *.namd file provides configuration for running SMD in NAMD
 The *.tcl scripts are used to perform SMD simulations using TclForces module in NAMD
