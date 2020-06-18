@@ -1,0 +1,114 @@
+#a############################################################
+## JOB DESCRIPTION                                         ##
+#############################################################
+
+#############################################################
+## ADJUSTABLE PARAMETERS                                   ##
+#############################################################
+
+#pdb with initial structure
+set startPDB       btub_fb_cbl_cut4.pdb
+set temperature    310
+#output name
+set outputname     SMD
+
+set pressure 1.01325
+
+#############################################################
+## SIMULATION PARAMETERS                                   ##
+#############################################################
+
+# Input
+firsttimestep      0
+amber              on
+parmfile           btub_fb_cbl_cut4.prmtop
+coordinates        $startPDB
+temperature        $temperature
+extendedSystem     prod.restart.xsc
+
+# Force-Field Parameters
+exclude             scaled1-4
+1-4scaling          0.833333
+cutoff              12.
+switching           on
+switchdist          10.
+pairlistdist        13.5
+pairlistspercycle   2
+
+# Integrator Parameters
+timestep            2.0  ;# 2fs/step
+rigidBonds          all  ;# needed for 2fs steps
+nonbondedFreq       1
+fullElectFrequency  1 
+stepspercycle       10
+
+# Constant Temperature Control
+langevin            on    ;# do langevin dynamics
+langevinDamping     1     ;# damping coefficient (gamma) of 1/ps
+langevinTemp        $temperature  # heat bath temp
+langevinHydrogen    off    ;# don't couple langevin bath to hydrogens
+
+wrapAll             on
+wrapWater           on
+
+# PME (for full-system periodic electrostatics)
+PME                 yes
+PMEGridSpacing      1.0
+
+# Constant Pressure Control (variable volume)
+useGroupPressure      yes ;# needed for rigidBonds
+useFlexibleCell       yes
+useConstantArea       no
+
+langevinPiston        on
+langevinPistonTarget  $pressure #  in bar -> 1 atm
+langevinPistonPeriod  100.
+langevinPistonDecay   50.
+langevinPistonTemp    $temperature
+
+# Output
+
+outputName          $outputname
+binaryoutput        no
+restartfreq         2500
+dcdfreq             2500
+xstFreq             2500
+outputEnergies      2500
+outputPressure      2500
+
+tclForces           on
+tclForcesScript     GF_SA.tcl
+
+set numA {0}
+set simSteps {0}
+source sim_protocol.tcl
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
+simAnneal
+normalRun
