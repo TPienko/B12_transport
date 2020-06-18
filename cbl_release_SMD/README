@@ -1,0 +1,7 @@
+# The Force_*.dat files comprise the extension of the luminal domain vs the relative position of Cbl in z while the constant-velocity / constant-force SMD simulations of simultaneous unfolding of the luminal domain and release of Cbl. The file title indicates the constant force (in kcal/mol) imposed on Cbl during the SMD simulations
+
+# The *.prmtop file contains parameters and topology, while the *.pdb file contains coordinates of the system
+
+# The *.namd file provides a configuration for running SMD in NAMD
+
+# The *.tcl scripts are used to perform SMD simulation using TclForces module in NAMD
