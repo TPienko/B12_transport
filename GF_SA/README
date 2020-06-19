@@ -1,4 +1,4 @@
 The *.tcl scripts used in GF-SA-MD simulations.
 The *.cxx and related files used to create a shared-object library loaded into the *.tcl script.
-The *.namd file contains configuration for exemplary Gf-SA-MD simulation. 
-
+The *.namd file contains configuration for exemplary GF-SA-MD simulation.
+The *.zip file comprises the *.prmtop and *.pdb files consisting of the topology, parameters, and coordinates of the system. 
