@@ -1,1 +1,4 @@
-The EPR_distances.zip file contains the time-series of the distances measured between selected loops' residues in 
+The *.zip files contain the time-series of the distances measured between selected loops' residues in conventional MD and GF-SA-MD analogously to 
+EPR spectroscopy measurements of Sikora et al.; the time-series of the distances between extracellular loops of BtuB (L1-L11) to Cbl binding site in 
+different states of BtuB. 
+The *.dat file comprises the heat map of RMSF of BtuB barrel residues in PC 1 and PC 2 modes extracted from GF-SA-MD simulations of different states of BtuB. 
