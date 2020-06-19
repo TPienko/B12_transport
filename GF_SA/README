@@ -1,1 +1,4 @@
-a
+The *.tcl scripts used in GF-SA-MD simulations.
+The *.cxx and related files used to create a shared-object library loaded into the *.tcl script.
+The *.namd file contains configuration for exemplary Gf-SA-MD simulation. 
+
