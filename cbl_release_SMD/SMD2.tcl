@@ -27,7 +27,7 @@ proc pull {cby kp v timeStep cry} {
 ##################################### CALCULATE FORCES #############################################
 proc calcforces {} {
    if {[array exists coords]} {array unset coords}
-   global output cblGroup pullGroup btubGroup timeStep v kr kp ke forceFreq2
+   global output cblGroup pullGroup btubGroup timeStep v kr kp ke forceFreq2 rcx rcy rcz pcy cby
    loadcoords coords
    if {$timeStep==0} {
       set rcx [lindex $coords($btubGroup) 0]
